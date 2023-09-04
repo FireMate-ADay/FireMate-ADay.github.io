@@ -1,5 +1,5 @@
 :root {
-	--DarkBlue: rgb(67, 103, 133);
+	--DarkBlue: rgb(24, 66, 100);
 	--AccentBlue: steelblue;
 	--DefaultTextColor: #444;
 	--AccentGray: #999;
@@ -8,7 +8,7 @@
 
 * {
 	font-family: Calibri;
-	font-size: 16px;
+	font-size: 12px;
 	letter-spacing: 0.015em;
 	color: var(--DefaultTextColor);
 }
@@ -28,10 +28,10 @@ h1, h2, p {
 }
 
 .page {
-	padding: 20px;
+	padding: 20px 20px 0 20px;
 	background-color: #fff;
-	max-width: 800px;
-	margin: 30px auto;
+	max-width: 640px;
+	margin: 30px auto 0px auto;
 	box-shadow: 0px 0px 10px 8px #222;
 }
 
@@ -92,98 +92,104 @@ h1, h2, p {
 
 .profile-brace {
 	font-family: 'Courier New', Courier, monospace;
-	font-size: 110px;
+	font-size: 90px;
+	margin-top: 8px;
+	margin-left: -5px;
 	font-weight: lighter;
-	margin: 0px -8px;
-	color: #dfdfdf;
+	color: steelblue
 }
 
 .profile-quote {
 	padding-top: 25px;
-	font-size: 16px;
+	font-size: 1.1em;
 	font-weight: normal;
 	color: #666;
 	text-align: center;
 }
 
 .section-container {
+	display: flex;
+	flex-direction: row;
 	margin-left: 0px;
 }
 
-.section-title {
-	color: var(--AccentBlue);
+.exp-title {
+	color: var(--DarkBlue);
 	padding: 0px 0px 5px 10px;
 	margin-bottom: 8px;
-	margin-left: 10px;
-	font-weight:lighter;
-	letter-spacing: 0.15em;
-	font-size: 1.5em;
+	font-weight: lighter;
+	letter-spacing: 0.2em;
+	font-size: 2em;
 	text-align: left;
 	vertical-align: middle;
 }
 
-.block-details {
-	/* border-top: 1px solid var(--AccentBlue); */
-	border-left: 5px solid var(--AccentBlue);
-	/* border-radius: 10px 0 0 0; */
+.exp-heading {
+	border-left: 3px solid var(--AccentBlue);
 	padding-top: 2px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 10px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	background: linear-gradient(rgb(240, 240, 240), #fff);
+	background: linear-gradient(rgb(193, 212, 255), #fff);
 }
 
-.block-title {
+.exp-company {
+	font-weight: normal;
+	font-size: 1.2em;
+	margin: 2px 10px 0 0;
+}
+
+.exp-name {
 	display: flex;
 	flex-direction: column;
 	margin-left: 10px;
 }
 
-.block-rightside {
+.exp-role {
+	font-style: italic;
+	font-size: 1.2em;
+	font-weight: normal;
+	margin-left: 10px;
+	color: var(--DarkBlue);
+}
+
+.exp-rightside {
 	display: flex;
 	flex-direction: column;
 	text-align: right;
-	margin-right: 8px;
+	margin-right: 5px;
 }
 
-.block-name {
-	font-weight: lighter;
-	font-size: 1.2em;
-	margin: 2px 0px;
-}
-
-.block-role {
-	font-style: italic;
-	font-size: 1.2em;
-	color: var(--AccentBlue);
-}
-
-.block-date {
-	font-size: 1em;
-	color: var(--AccentBlue);
-	margin: 2px;
-	font-weight: normal;
-}
-
-.block-location {
+.exp-date {
 	font-size: 1em;
 	color: var(--DarkBlue);
 	margin: 2px;
+	font-weight: bold;
+}
+
+.exp-location {
+	font-size: 1em;
+	color: var(--DarkBlue);
+	margin-right: 2px;
 	font-weight: normal;
 }
 
-.block-description {
-	margin: 10px 20px 3px 30px;
+.exp-description {
+	margin: 8px 0px 15px 24px;
+	font-size: 1.2em;
 }
 
-.tech-container {
-	margin-top: 8px;
-	margin-left: 25px;
-	margin-bottom: 15px;
-	display: flex;
-	flex-direction: row;
+.exp-item {
+	text-indent: -14px;	
+	margin: 5px 0px;
+}
+
+.sidebar {
+	background-color: var(--DarkBlue);
+	border-radius: 5px 20px 0 0;
+	min-width: 200px;
+	margin-bottom: 0;
 }
 
 .tech-title {
@@ -201,55 +207,56 @@ h1, h2, p {
 	padding: 2px 4px;
 }
 
-.split-section {
-	display: flex;
-	flex-direction: row;
-	justify-content:space-between;
-	margin-top: 20px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid var(--AccentBlue);
+.skills-title {
+	color: white;
+	margin-bottom: 8px;
+	margin-left: 8px;
+	font-weight:lighter;
+	letter-spacing: 0.2em;
+	font-size: 2em;
+	text-align: left;
 }
 
-.skills-section {
+.skills-list {
 	margin-left: 10px;
+	margin-bottom: 20px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .skill-item
 {
 	padding: 0 5px;
 	font-size: 1.2em;
-	color: #42536d;
+	font-weight: lighter;
+	color: white;
 }
 
 .edu-title {
-	color: var(--AccentBlue);
-	padding: 0px 0px 5px 10px;
+	color: white;
 	margin-bottom: 8px;
-	margin-left: 10px;
+	margin-left: 8px;
 	font-weight:lighter;
 	letter-spacing: 0.15em;
-	font-size: 1.5em;
-	vertical-align: middle;
-}
-
-.edu-section {
-	text-align: right;
-}
-
-.edu-panel {
-	text-align: right;
-	margin-right: 12px;
+	font-size: 1.8em;
+	text-align: left;
 }
 
 .edu-item {
-	padding: 5px 0px;
-	font-size: 1.4em;
-	color: #42536d;
+	padding-left: 15px;
+	font-size: 1.2em;
+	font-weight: lighter;
+	color: white;
+}
+
+.edu-subject {
+	padding-left: 15px;
+	font-size: 1.2em;
+	color: rgb(219, 217, 69);
 }
 
 .edu-year {
-	font-size: 1.1em;
-	color: #42536d;
+	padding-left: 15px;
+	font-size: 1.2em;
+	color: rgb(114, 162, 201);
 }
