@@ -8,7 +8,7 @@
 
 * {
 	font-family: Calibri;
-	font-size: 12px;
+	font-size: 13px;
 	letter-spacing: 0.015em;
 	color: var(--DefaultTextColor);
 }
@@ -17,7 +17,8 @@ body {
 	width: 100%;
 	height: 100vh;
 	margin: 0;
-	background-color: #32324d;
+	/* background-color: #32324d; */
+	background-color: white;
 	font-family: Tahoma;
 	font-size: 16px;
 }
@@ -28,11 +29,11 @@ h1, h2, p {
 }
 
 .page {
-	padding: 20px 20px 0 20px;
+	padding: 10px 20px 0 20px;
 	background-color: #fff;
-	max-width: 640px;
+	max-width: 750px;
 	margin: 30px auto 0px auto;
-	box-shadow: 0px 0px 10px 8px #222;
+	/* box-shadow: 0px 0px 10px 8px #222; */
 }
 
 .main-header {
@@ -84,7 +85,7 @@ h1, h2, p {
 .profile-container {
 	border-top: 1px solid var(--AccentBlue);
 	margin: 0px auto;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -101,6 +102,8 @@ h1, h2, p {
 
 .profile-quote {
 	padding-top: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
 	font-size: 1.1em;
 	font-weight: normal;
 	color: #666;
@@ -115,7 +118,7 @@ h1, h2, p {
 
 .exp-title {
 	color: var(--DarkBlue);
-	padding: 0px 0px 5px 10px;
+	padding: 0px 0px 5px 20px;
 	margin-bottom: 8px;
 	font-weight: lighter;
 	letter-spacing: 0.2em;
@@ -125,14 +128,14 @@ h1, h2, p {
 }
 
 .exp-heading {
-	border-left: 3px solid var(--AccentBlue);
-	border-top: 1px solid var(--AccentBlue);
+	border-left: 4px solid var(--AccentBlue);
+	/* border-top: 2px solid var(--AccentBlue); */
 	padding-top: 2px;
 	margin-left: 10px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	/* background: linear-gradient(rgb(193, 212, 255), #fff); */
+	background: linear-gradient(rgb(221, 221, 221), #fff);
 }
 
 .exp-company {
@@ -177,19 +180,19 @@ h1, h2, p {
 }
 
 .exp-description {
-	margin: 8px 20px 15px 24px;
+	margin: 8px 20px 25px 25px;
 	font-size: 1.2em;
 }
 
 .exp-item {
 	text-indent: -14px;	
-	margin: 5px 0px;
+	margin: 4px 0px;
 }
 
 .sidebar {
 	background-color: var(--DarkBlue);
 	border-radius: 5px 20px 0 0;
-	min-width: 200px;
+	min-width: 220px;
 	margin-bottom: 0;
 }
 
@@ -211,7 +214,8 @@ h1, h2, p {
 .sidebar-title {
 	color: white;
 	margin-bottom: 8px;
-	margin-left: 8px;
+	margin-top: 7px;
+	margin-left: 16px;
 	font-weight:lighter;
 	letter-spacing: 0.2em;
 	font-size: 2em;
@@ -227,7 +231,7 @@ h1, h2, p {
 
 .skill-item
 {
-	padding: 0 5px;
+	padding: 5px 5px;
 	font-size: 1.2em;
 	font-weight: lighter;
 	color: white;
@@ -235,33 +239,35 @@ h1, h2, p {
 
 .edu-item
 {
-	padding: 0 20px;
+	padding-left: 22px;
 	text-indent: -17px;	
 	font-size: 1.2em;
-	font-weight: bold;
+	font-weight: normal;
 	color: white;
 }
 
 .edu-subject {
-	padding: 5px 20px;
+	padding-left: 22px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 	font-size: 1.2em;
 	font-weight: lighter;
-	color: white;
+	color: rgb(206, 206, 206);
 }
 
 .edu-year {
-	padding: 0 20px;
+	padding-left: 22px;
 	font-size: 1.2em;
 	font-weight: lighter;
-	color: rgb(204, 204, 204);
+	color: rgb(145, 145, 145);
 }
 
 .ref-title {
 	color: rgb(219, 217, 69);
-	margin-top: 28px;
-	margin-left: 15px;
-	margin-right: 15px;
+	margin-top: 20px;
+	margin-left: 17px;
+	margin-right: 60px;
 	font-weight: lighter;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	text-align: left;
 }
