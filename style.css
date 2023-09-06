@@ -126,12 +126,13 @@ h1, h2, p {
 
 .exp-heading {
 	border-left: 3px solid var(--AccentBlue);
+	border-top: 1px solid var(--AccentBlue);
 	padding-top: 2px;
 	margin-left: 10px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	background: linear-gradient(rgb(193, 212, 255), #fff);
+	/* background: linear-gradient(rgb(193, 212, 255), #fff); */
 }
 
 .exp-company {
@@ -176,7 +177,7 @@ h1, h2, p {
 }
 
 .exp-description {
-	margin: 8px 0px 15px 24px;
+	margin: 8px 20px 15px 24px;
 	font-size: 1.2em;
 }
 
@@ -207,7 +208,7 @@ h1, h2, p {
 	padding: 2px 4px;
 }
 
-.skills-title {
+.sidebar-title {
 	color: white;
 	margin-bottom: 8px;
 	margin-left: 8px;
@@ -217,7 +218,7 @@ h1, h2, p {
 	text-align: left;
 }
 
-.skills-list {
+.sidebar-section {
 	margin-left: 10px;
 	margin-bottom: 20px;
 	display: flex;
@@ -232,31 +233,35 @@ h1, h2, p {
 	color: white;
 }
 
-.edu-title {
+.edu-item
+{
+	padding: 0 20px;
+	text-indent: -17px;	
+	font-size: 1.2em;
+	font-weight: bold;
 	color: white;
-	margin-bottom: 8px;
-	margin-left: 8px;
-	font-weight:lighter;
-	letter-spacing: 0.15em;
-	font-size: 1.8em;
-	text-align: left;
 }
 
-.edu-item {
-	padding-left: 15px;
+.edu-subject {
+	padding: 5px 20px;
 	font-size: 1.2em;
 	font-weight: lighter;
 	color: white;
 }
 
-.edu-subject {
-	padding-left: 15px;
+.edu-year {
+	padding: 0 20px;
 	font-size: 1.2em;
-	color: rgb(219, 217, 69);
+	font-weight: lighter;
+	color: rgb(204, 204, 204);
 }
 
-.edu-year {
-	padding-left: 15px;
-	font-size: 1.2em;
-	color: rgb(114, 162, 201);
+.ref-title {
+	color: rgb(219, 217, 69);
+	margin-top: 28px;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-weight: lighter;
+	font-size: 1.5em;
+	text-align: left;
 }
